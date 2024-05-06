@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+.redoundobutton {
+  background: #e0dfff;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  height: 35px;
+}
+.redoundobuttonone {
+  background: #e0dfff;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  height: 35px;
+}
+.undoredo {
+  border-right: solid 2px #f1f3f4;
+  box-shadow: none;
+}
+.undorow {
+  border-top: solid 2px #f1f3f4;
+  border-bottom: solid 2px #f1f3f4;
+  box-shadow: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+  border: none;
+}
+textarea {
+  border: none;
+  height: 40px;
+}
+.floating {
+  z-index: 3;
+  border-radius: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.color-box {
+  text-align: start;
+  background-color: white;
+  padding: 15px;
+  max-width: 254px;
+  margin-left: 10px;
+  border-radius: 20px;
+  margin-top: 70px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.candiv {
+  z-index: 1;
+}
+.color-cont {
+  margin: 2px;
+  height: 25px;
+  padding: 10px;
+  border: 3px solid #777c81;
+  box-sizing: border-box;
+  opacity: 0.9;
+}
+.color-contone {
+  margin: 2px;
+  height: 25px;
+  width: 32px;
+  border: 3px solid #777c81;
+  box-sizing: border-box;
+  opacity: 0.9;
+}
+.input-color {
+  width: 28px;
+  height: 20px;
+  border: 0px;
+}
+.fillimg {
+  width: 30px;
+  height: 30px;
+  background-color: #f1f0ff;
+  padding: 5px;
+}
+.fillbox {
+  margin: "0px";
+}
+.idbox {
+  width: 250px;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0.5%;
+  top: 120%;
+  background-color: green;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+}
+
+.idbox.open {
+  animation-name: openBox;
+  background-color: white;
+}
+
+.idbox.close {
+  animation-name: closeBox;
+}
+
+@keyframes openBox {
+  0% {
+    height: 0;
+    top: 120%;
+  }
+  100% {
+    height: auto;
+    top: 65%;
+  }
+}
+
+@keyframes closeBox {
+  0% {
+    height: auto;
+    top: 65%;
+  }
+  100% {
+    height: 0;
+    top: 120%;
+  }
+}

@@ -1,0 +1,22 @@
+
+  .resizable {
+    cursor: move; /* default cursor */
+  }
+
+  .resizable.resizing {
+    cursor: nwse-resize; /* diagonal resize cursor */
+  }
+
+  .resizable.resizing-left,
+  .resizable.resizing-right {
+    cursor: ew-resize; /* horizontal resize cursor */
+  }
+
+  .resizable.resizing-top,
+  .resizable.resizing-bottom {
+    cursor: ns-resize; /* vertical resize cursor */
+  }
+.toastcont{
+  width: 40%;
+  height: 5px;
+}
