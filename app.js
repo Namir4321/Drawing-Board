@@ -9,8 +9,8 @@ const io=new Server(server);
 let roomIdGlobal,imgUrlGlobal;
 app.use(
   cors({
-    origin: process.env.BASE_URL, // Allow requests from this origin
-    optionsSuccessStatus: 200, // Some legacy browsers (IE11, various SmartTVs) choke on 204
+    origin: process.env.BASE_URL, 
+    optionsSuccessStatus: 200,
   })
 );
 
@@ -60,7 +60,7 @@ socket.on("disconnect", () => {
 });
     
 })
-const port =process.env.PORT || 8080  ;
+const port =process.env.PORT ;
 
 server.listen(port,()=>
 console.log(`server is running on ${port}`))
